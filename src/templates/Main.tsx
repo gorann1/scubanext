@@ -9,10 +9,10 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="w-full px-1 text-gray-700 antialiased">
+  <div>
     {props.meta}
 
-    <div className="mx-auto max-w-screen-md">
+    <div>
       <header className="border-b border-gray-300">
         <div className="pt-16 pb-8">
           <h1 className="text-3xl font-bold text-gray-900">
@@ -36,6 +36,22 @@ const Main = (props: IMainProps) => (
                 className="border-none text-gray-700 hover:text-gray-900"
               >
                 About
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link
+                href="/contact/"
+                className="border-none text-gray-700 hover:text-gray-900"
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link
+                href="/profile/"
+                className="border-none text-gray-700 hover:text-gray-900"
+              >
+                Profile
               </Link>
             </li>
             <li className="mr-6">
